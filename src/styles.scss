@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/smart-grid.sass";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@font-face {
+    font-family: 'highTowerText';
+    src: url('/assets/fonts/HTOWERT.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'highTowerText';
+}
+html {
+  overflow-x: hidden;
+}
+.hide-md {
+  @include md(display, none !important);
+}
+.show-md {
+  display: none;
+  @include md(display, block !important);
+}

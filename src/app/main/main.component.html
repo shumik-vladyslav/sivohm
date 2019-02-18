@@ -1,0 +1,46 @@
+<div class="sidebar" [ngClass]="{'show': showMenu}">
+    <div class="logo">
+        <img src="assets/img/sivohmlogo.png" alt="">
+    </div>
+    <div class="search-wrap">
+        <input type="text">
+        <i class="fas fa-search"></i>
+    </div>
+    <div class="menu">
+        <div class="menu--item">
+            Services
+        </div>
+        <div class="menu--item">
+            Products
+        </div>
+        <div class="menu--item">
+            Consulting
+        </div>
+    </div>
+    <div class="social-wrap">
+        <div class="social-wrap--item">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="social-wrap--item">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="social-wrap--item">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <div class="social-wrap--item">
+            <i class="fab fa-instagram"></i>
+        </div>
+    </div>
+</div>
+
+<div class="bg-sidebar" (click)="showMenu = false" [ngClass]="{'show': showMenu}"></div>
+
+<div class="main-warp" [ngClass]="{'open-menu': showMenu}">
+    <app-header></app-header>
+
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+</div>

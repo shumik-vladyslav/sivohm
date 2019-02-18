@@ -1,0 +1,45 @@
+@import '../../../../assets/smart-grid.sass';
+
+footer{
+    @include row-flex();
+
+    padding-top: 42px;
+    padding-bottom: 10px;
+    background: #002b51;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+.footer-section{
+    @include col();
+    @include size(3);
+    @include size-md(5);
+    @include size-xs(10);
+
+    padding: 10px 45px;
+    &--lable{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &--item{
+        margin-bottom: 30px;
+        cursor: pointer;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.footer-lable{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    
+    @include size(6);
+    @include size-md(12);
+    @include md(justify-content, center);
+    @include md(padding-right, 0);
+    @include size-xs(12);
+}

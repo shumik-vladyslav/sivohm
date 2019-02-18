@@ -1,0 +1,94 @@
+<div class="baner-wrap">
+  <div class="caption">
+    Our commitment to your success
+  </div>
+  <div class="details">
+    With our dedicated team offering unparalel srvices and product choices, you can conduct your business with more
+    comfort in the current dynamic and demanding environment.
+  </div>
+  <div class="card-wrap">
+    <div class="card-wrap--item">
+      <div class="card">
+        <div class="card--caption">
+          Services
+        </div>
+        <div class="card--details">
+          Maintenance free management of your business on our platform services.
+        </div>
+        <div class="card--button-wrap">
+          <button>
+            MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrap--item">
+      <div class="card">
+        <div class="card--caption">
+          Products
+        </div>
+        <div class="card--details">
+          Specialized in AI/Machine Learning and Hight performance server side engines.
+        </div>
+        <div class="card--button-wrap">
+          <button>
+            MORE
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrap--item">
+      <div class="card">
+        <div class="card--caption">
+          Consulting
+        </div>
+        <div class="card--details">
+          Our experts available 24/7 for your technology needs to address your bisiness problems.
+        </div>
+        <div class="card--button-wrap">
+          <button>
+            MORE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="partners">
+  <div class="partners--lable">
+    Our Parnters
+  </div>
+</div>
+<div class="partners-wrap">
+  <div class="partners-wrap--item">
+    <div class="partners-card">
+      <img width="205px" src="assets/img/hazelcast.png" alt="">
+    </div>
+  </div>
+  <div class="partners-wrap--item">
+    <div class="partners-card">
+      <img width="230px" src="assets/img/chronicle.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="need-help-wrap-outer">
+  <div class="need-help-wrap" [ngClass]="{'show': showHelp}">
+    <div class="user-row">
+      <img src="assets/img/user1.png" alt="">
+      <img src="assets/img/user2.png" alt="">
+      <img src="assets/img/user3.png" alt="">
+    </div>
+    <div class="button-wrap">
+      <button (click)="showHelp = false">
+        Can we help?
+      </button>
+    </div>
+    <div class="bot-text">
+      Investor Resources
+    </div>
+  </div>
+  <div class="icon" (click)="showHelp = true">
+    <i class="fas fa-question-circle"></i>
+  </div>
+</div>
